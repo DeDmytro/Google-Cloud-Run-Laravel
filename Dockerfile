@@ -24,5 +24,5 @@ COPY .env.example .env
 COPY docker/entrypoint.sh entrypoint.sh
 RUN chmod 777 -R storage && php artisan key:generate
 
-EXPOSE 80
+EXPOSE 8080
 ENTRYPOINT ["sh", "entrypoint.sh"]
