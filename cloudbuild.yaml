@@ -1,4 +1,5 @@
 #cloudbuild.yaml
 steps:
-  - name: 'docker/compose:1.19.0'
+  - name: 'docker-compose'
     args: ['up', '-d']
+tags: ['test']
